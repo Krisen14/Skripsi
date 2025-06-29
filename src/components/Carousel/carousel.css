@@ -1,0 +1,50 @@
+.carousel-wrapper {
+    width: 100%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    background-color: #FEFEFE;
+  }
+  
+  .custom-slide {
+    height: 525px; 
+    width: 1260px;
+    margin-left: 90px;
+    margin-right: 90px;
+    border-radius: 20px;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* --- Custom Arrows --- */
+  .carousel .control-arrow {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(600%);
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    opacity: 1;
+    border: none;
+  }
+  
+  /* Arrow icon styling */
+  .carousel .control-prev::before,
+  .carousel .control-next::before {
+    color: white;
+    font-size: 24px;
+  }
+  
+  /* Positioning */
+  .carousel .control-prev.control-arrow {
+    left: 105px;
+  }
+  
+  .carousel .control-next.control-arrow {
+    right: 90px;
+  }
+  

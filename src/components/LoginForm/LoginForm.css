@@ -1,0 +1,28 @@
+.input-fieldlogin {
+    width: 562px;
+    height: 38px;
+    padding: 0.7rem;
+    margin: 0.5rem 0 1rem 0;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #333;
+    border-radius: 6px;
+  }
+  
+  .Body{
+    height: 100%;
+  }
+
+  .submit-btnlogin{
+      width: 338px;
+      height: 54px;
+      padding: 0.8rem;
+      background-color: rgb(35, 111, 161);
+      color: white;
+      border: none;
+      margin-left: 90px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 2rem;
+    }
+  

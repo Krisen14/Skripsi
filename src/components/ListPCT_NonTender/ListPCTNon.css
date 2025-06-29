@@ -1,0 +1,117 @@
+/* List.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+  }
+  
+  th,
+  td {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #1d79d4;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #2369b0;
+  }
+  
+  tbody tr:hover {
+    background-color: #e2e8f0;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead {
+      display: none;
+    }
+  
+    tr {
+      margin-bottom: 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      padding: 0.5rem;
+      background-color: #fff;
+    }
+  
+    td {
+      border: none;
+      padding: 0.5rem 0;
+      position: relative;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      color: #475569;
+      margin-bottom: 0.25rem;
+    }
+  }
+  
+
+
+
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .pagination-button {
+    padding: 8px 12px;
+    background-color: #e5e7eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+  }
+  
+  .pagination-button:hover {
+    background-color: #d1d5db;
+    transform: scale(1.05);
+  }
+  
+  .pagination-button:disabled {
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .pagination-button.active {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+  
+  .empty-message {
+    text-align: center;
+    padding: 40px 20px;
+    color: #777;
+    font-style: italic;
+    font-size: 14px;
+  }
+  

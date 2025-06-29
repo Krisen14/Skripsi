@@ -1,0 +1,86 @@
+.popup-container {
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    width: 90%;
+    max-width: 800px;
+    z-index: 9999;
+  }
+  
+  .popup-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section-header {
+    background-color: #3f0e93;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 20px 0 10px 0;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .pakta-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .popup-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn-accept {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-accept:hover {
+    background-color: #218838;
+  }
+  
+  .btn-decline {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #999;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-decline:hover {
+    background-color: #f2f2f2;
+  }
+  

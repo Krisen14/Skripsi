@@ -1,0 +1,107 @@
+.html,body{
+  color: #000;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.auth-tabs {
+  transform:translateY(-10%);
+  max-width: 720px;
+  margin-left: 90px;
+}
+
+.tab-switcher {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  color: #29166F;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  overflow: hidden;
+}
+
+/* Hover effect: teks menjadi merah */
+.tab-button:hover {
+  color: red;
+}
+
+/* Garis bawah (underline) - default: disembunyikan */
+.tab-button::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #DA251C; /* Warna merah */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* Saat hover: tampilkan underline dengan animasi */
+.tab-button:hover::after {
+  transform: scaleX(1);
+}
+
+/* Saat aktif: underline selalu tampil */
+.tab-button.active::after {
+  transform: scaleX(1);
+}
+
+/* Warna teks saat aktif */
+.tab-button.active {
+  color: red;
+  font-weight: 500;
+}
+
+
+
+.segmented-button-group {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.segmented-button {
+  padding: 0.5rem 1rem;
+  margin: 0 0rem;
+  border: 1px solid #111;
+  color: #111;
+  height: 43px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.segmented-button-kanan {
+  padding: 0.5rem 1rem;
+  margin: 0 0rem;
+  border: 1px solid #111;
+  color: #000;
+  height: 43px;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.segmented-button.active {
+  background-color: #29166F;
+  color: white;
+  border-color: none;
+}
+
+.segmented-button-kanan.active {
+  background-color: #29166F;
+  color: white;
+  border-color: none;
+}
+

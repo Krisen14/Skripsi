@@ -1,0 +1,197 @@
+.html,body{
+    background-color: #FEFEFE;
+}
+.list-container {
+
+    padding-top: 0%;
+    background-color: #f9fafb;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  }
+  
+  .list-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-left: 90px;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Table Wrapper */
+  .table-wrapper {
+    overflow-x: auto;
+    width: 1340px;
+    margin-left: 90px;
+    margin-left: 90px;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+  }
+  
+  /* Table */
+  .tender-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+  }
+  
+  .kode-paket{
+    max-width: fit-content;
+    width: 100px;
+    text-align: center !important;
+  }
+  
+  .tender-table th,
+  .tender-table td {
+    padding: 1rem;
+    background-color: #fff;
+    color: #1e293b;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+  }
+  
+  .tender-table thead {
+    background-color: #f1f5f9;
+    color: #1f2937;
+  }
+  
+  .tender-row:hover {
+    background-color: #f3f4f6;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Link */
+  .tender-link {
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .tender-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pagination */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .pagination-button {
+    padding: 0.5rem 0.75rem;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #1e293b;
+    transition: all 0.2s ease;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #2563eb;
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+  
+  .pagination-button:disabled {
+    background-color: #f3f4f6;
+    color: #3a4047;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button.active {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+  
+  /* Empty message */
+  .empty-message {
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .tender-table,
+    .tender-table thead,
+    .tender-table tbody,
+    .tender-table th,
+    .tender-table td,
+    .tender-table tr {
+      display: block;
+    }
+  
+    .tender-table thead {
+      display: none;
+    }
+  
+    .tender-row {
+      margin-bottom: 1rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 0.75rem;
+    }
+  
+    .tender-table td {
+      padding: 0.5rem 0;
+      border: none;
+      position: relative;
+    }
+  
+    .tender-table td::before {
+      content: attr(data-label);
+      font-weight: 600;
+      color: #6b7280;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+  }
+  
+  .detailpaket{
+    font-size: 0.8rem;
+  }
+  
+  .Harga{
+    width: 166px;
+  }
+  
+  .page-input{
+    background-color: white;
+    height: 1.9rem;
+    border: 1px solid #5e6575;
+    color: #1e293b;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+    font-size: large;
+    text-align: center;
+  }
+  
+  
+  .page-input:active{
+    border: none;
+  }
+  
+  .limitSelect{
+    color: #1e293b;
+    background-color: transparent;
+    border-radius: 4px;
+    height: 1.9rem;
+    width: 3rem;
+  }
+  
+  .labelbawah{
+    color: #1e293b;
+  }
+  

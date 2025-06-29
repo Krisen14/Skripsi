@@ -1,0 +1,69 @@
+.Body{
+    background-color: #FEFEFE !important;
+}
+
+.title-abcd {
+    text-align: center;
+    background-color: #29166F;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 30px;
+    border-radius: 6px;
+    width: 1260px;
+    height: 88px;
+    margin: 0 auto 30px;
+  }
+
+
+.resource-page {
+    padding: 40px;
+    font-family: sans-serif;
+  }
+  
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px 10rem; 
+  }
+  
+  .resource-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    transition: transform 0.2s ease;
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-0px);
+  }
+  
+  .resource-title {
+    font-size: 14px;
+    margin: 12px 0;
+    color: #333;
+  }
+  
+  .resource-button {
+    background-color: #FFF500;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    width: 180px;
+    height: 52px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .resource-button:hover {
+    background-color: #FFF500;
+  }
+  

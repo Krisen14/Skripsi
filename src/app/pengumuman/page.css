@@ -1,0 +1,96 @@
+.body{
+    background-color: #FEFEFE;
+}
+
+.title-abcd {
+    text-align: center;
+    background-color: #29166F;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 30px;
+    border-radius: 6px;
+    width: 1260px;
+    height: 88px;
+    margin: 0 auto 30px;
+  }
+
+  .pengumuman-container {
+    padding: 2rem;
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 29px,
+        rgba(255, 0, 0, 0.1) 30px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 29px,
+        rgba(255, 0, 0, 0.1) 30px
+      );
+    min-height: 100vh;
+  }
+
+  .announcement-list {
+    margin-left: 90px;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .announcement-card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .date-box {
+    background-color: #009FE3;
+    color: white;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    flex-shrink: 0;
+  }
+  
+  .date-day {
+    font-size: 1.5rem;
+  }
+  
+  .date-month-year {
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1rem;
+  }
+  
+  .announcement-content {
+    padding: 1rem;
+    flex: 1;
+  }
+  
+  .announcement-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1b005d;
+  }
+  
+  .announcement-excerpt {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  .announcement-time {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  

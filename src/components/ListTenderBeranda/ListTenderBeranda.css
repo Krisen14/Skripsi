@@ -1,0 +1,354 @@
+/* List.css */
+
+/* ===== Typography & Colors ===== */
+.header-tender-beranda,
+.kategori-title {
+  color: #1e293b;
+}
+
+.kategori-title {
+  margin-top: 2rem;
+}
+
+/* ===== Layout Containers ===== */
+.list-container {
+  padding: 2rem;
+  background-color: #f9fafb;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.list-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Table Styles ===== */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+.tender-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  table-layout: fixed;
+}
+
+.tender-table th,
+.tender-table td {
+  padding: 1rem;
+  color: #1e293b;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.tender-table thead {
+  background-color: #f1f5f9;
+  color: #1f2937;
+}
+
+.tender-table th:nth-child(1), .tender-table td:nth-child(1) { width: 5%; }
+.tender-table th:nth-child(2), .tender-table td:nth-child(2) { width: 35%; }
+.tender-table th:nth-child(3), .tender-table td:nth-child(3) { width: 20%; }
+.tender-table th:nth-child(4), .tender-table td:nth-child(4) { width: 20%; }
+.tender-table th:nth-child(5), .tender-table td:nth-child(5) { width: 20%; }
+
+.tender-row:hover {
+  background-color: #f3f4f6;
+  transition: background-color 0.2s ease;
+}
+
+/* ===== Responsive Table ===== */
+@media (max-width: 768px) {
+  .tender-table,
+  .tender-table thead,
+  .tender-table tbody,
+  .tender-table th,
+  .tender-table td,
+  .tender-table tr {
+    display: block;
+  }
+
+  .tender-table thead {
+    display: none;
+  }
+
+  .tender-row {
+    margin-bottom: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    padding: 0.75rem;
+  }
+
+  .tender-table td {
+    padding: 0.5rem 0;
+    border: none;
+    position: relative;
+  }
+
+  .tender-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #6b7280;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}
+
+/* ===== Pagination ===== */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.pagination-button {
+  padding: 0.5rem 0.75rem;
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #1e293b;
+  transition: all 0.2s ease;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #2563eb;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.pagination-button:disabled {
+  background-color: #f3f4f6;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.pagination-button.active {
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+/* ===== Card Styles ===== */
+.tender-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 1rem; 
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 0 0 auto;
+}
+
+.tender-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  margin-bottom: 0.5rem;
+}
+
+.nama-tender {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.kategori-text {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.card-body p {
+  font-size: 0.875rem;
+  color: #334155;
+  margin: 0.25rem 0;
+}
+
+.card-body-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 1rem;
+  margin-top: 1rem;
+  
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+.card-body-grid div {
+  background: #f8fafc;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.nilai-hps {
+  font-weight: bold;
+  color: #0f172a;
+  margin-top: 0.5rem;
+  
+}
+
+.status {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+.status-berjalan {
+  color: #22c55e;
+}
+
+.status-lain {
+  color: #ef4444;
+}
+
+.card-footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.tender-link-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.tender-link-btn:hover {
+  background-color: #1e40af;
+}
+
+
+.card-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.card-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.scroll-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.scroll-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0 0.5rem;
+  color: #1e293b;
+}
+
+/* ===== Miscellaneous ===== */
+.empty-message {
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.tender-link {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.tender-link:hover {
+  text-decoration: underline;
+}
+
+.tender-group {
+  margin-bottom: 0;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+.card-top {
+  height: 100px;
+}
+
+.modal-overlay{
+  width: 100%;
+  height: max-content;
+}
+
+.modal-content{
+  width: 200% !important;
+}
+
+.grid-modal {
+  display: grid;
+  width: 100%;
+  height: max-content;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.modal-actions{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-detail{
+  background-color:#2563eb;
+  border: none;
+  width: fit-content;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-close{
+  background-color: rgb(197, 98, 55);
+  border: none;
+  width: 5rem;
+  height: 3.2rem;
+  font-size: large;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 2rem;
+}

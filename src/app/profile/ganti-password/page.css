@@ -1,0 +1,198 @@
+.html,body{
+    background-color: #FEFEFE;
+}
+
+.data-penyedia-container {
+    padding: 2rem;
+    font-family: sans-serif;
+    max-width: 100%;
+    margin-left: 90px;
+    margin-right: 90px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .section-header {
+    font-size: 1.75rem;
+    font-weight: bold;
+    background: #4b0082;
+    color: white;
+    padding-top: 2rem;
+    border-radius: 8px;
+    height: 93px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .section-subheader {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .edit-button {
+    padding: 0.25rem 0.75rem;
+    background-color: #ffe100;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .data-grid {
+    display: grid;
+    color: #111;
+    gap: 0.75rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .data-section {
+    margin-bottom: 2rem;
+    
+  }
+  
+  .legalitas-header {
+    background: #4b0082;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 6px;
+    
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .data-instruction {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .legalitas-form {
+    color: #111;
+    width: 100%;
+  }
+
+
+
+  .custom-select {
+    appearance: none; /* hilangkan default arrow */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #111;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    width: 100%;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20fill%3D'black'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20width%3D'24'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M7%2010l5%205%205-5H7z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 18px;
+  }
+
+  .norek{
+    appearance: none; /* hilangkan default arrow */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #111;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 18px;
+  }
+  
+  .custom-select:focus {
+    outline: none;
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.3);
+  }
+  
+  .ubah-password-container {
+  max-width: 600px;
+    color: #111;
+  background: #fff;
+  padding: 30px;
+  padding-left:0px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  color: #111;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+input.disabled-input {
+  background: #eaeaea;
+  color: #666;
+  border: 1px solid #ccc;
+  margin-top: 0;
+}
+
+.note {
+  display: block;
+  margin-bottom: 16px;
+  color: #666;
+  font-size: 13px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.icon {
+  margin-right: 6px;
+}
+
+.info-row a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-row a:hover {
+  text-decoration: underline;
+}
+
+.simpan-btn {
+  background-color: #0092ea;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.simpan-btn .btn-icon {
+  margin-right: 8px;
+}
+  

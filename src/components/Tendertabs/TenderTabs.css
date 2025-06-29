@@ -1,0 +1,44 @@
+/* TenderTabs.css */
+
+.tender-tabs {
+  display: flex;
+  padding: 1rem;
+  gap: 24px;
+  margin-top: 0rem;
+  background-color: #ffffff;
+  position: relative;
+  overflow-x: auto;
+  margin-left: 90px;
+}
+
+.tender-tab-link-wrapper {
+  text-decoration: none;
+}
+
+.tender-tab-link {
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  color: #29166F;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.tender-tab-link:hover {
+  color: #D22B50;
+}
+
+.tender-tab-link.is-active {
+  color: #D22B50;
+  font-weight: 600;
+}
+
+.tender-tab-indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 3px;
+  background-color: #D22B50;
+  border-radius: 2px;
+}

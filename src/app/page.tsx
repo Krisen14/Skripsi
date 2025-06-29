@@ -1,95 +1,167 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import './page.css';
+import Navbar from "@/components/Navbar/navbar";
+import Link from "next/link";
+import Footer from "@/components/Footer/footer";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
+
+import type { AppProps } from 'next/app';
+import List from "@/components/List/List";
+import Carousel from "@/components/Carousel/carousel";
+import { Url } from "next/dist/shared/lib/router/router";
+
+
+interface Announcement {
+  date: string;
+  monthYear: string;
+  title: string;
+  time: string;
+  link: string;
+}
+
+interface InfoItem {
+  title: string;
+  buttonLabel: string;
+  color?: string;
+  icon?: string; // Optional if you want to use icons
+  href?: Url;
+}
+
+const infoItems: InfoItem[] = [
+  { title: 'Semua Pelayanan LPSE Tidak Dipungut Biaya', buttonLabel: 'Lapor Disini' },
+  { title: 'Informasi Untuk Penyedia LPSE', buttonLabel: 'Klik Disini', href:"/informasilainnya"},
+  { title: 'Panduan SPSE 4.5 Bagi Penyedia/Non Penyedia', buttonLabel: 'Klik Disini' },
+  { title: 'Himbauan Penggunaan Fitur 2FA Bagi Seluruh Pengguna SPSE', buttonLabel: 'Klik Disini' },
+  { title: 'Pengumuman RUP Dan Pelaksanaan PBJ TA 2025', buttonLabel: 'Lapor Disini' },
+  { title: 'Pelaksanaan Penilaian Kinerja Penyedia Tahun 2024', buttonLabel: 'Klik Disini' },
+];
+
+
+const announcements: Announcement[] = [
+  {
+    date: '20',
+    monthYear: 'Jun 25',
+    title: 'Pemberitahuan Awal Perubahan Domain Aplikasi SPSE – LPSE Provinsi DKI Jakarta',
+    time: '18:07 wib',
+    link: '#', // Ganti dengan link aktual
+  },
+  {
+    date: '20',
+    monthYear: 'Jun 25',
+    title: 'Pemberitahuan Awal Perubahan Domain Aplikasi SPSE – LPSE Provinsi DKI Jakarta',
+    time: '18:07 wib',
+    link: '#', // Ganti dengan link aktual
+  },
+  {
+    date: '20',
+    monthYear: 'Jun 25',
+    title: 'Pemberitahuan Awal Perubahan Domain Aplikasi SPSE – LPSE Provinsi DKI Jakarta',
+    time: '18:07 wib',
+    link: '#', // Ganti dengan link aktual
+  },
+  {
+    date: '20',
+    monthYear: 'Jun 25',
+    title: 'Pemberitahuan Awal Perubahan Domain Aplikasi SPSE – LPSE Provinsi DKI Jakarta',
+    time: '18:07 wib',
+    link: '#', // Ganti dengan link aktual
+  },
+  {
+    date: '20',
+    monthYear: 'Jun 25',
+    title: 'Pemberitahuan Awal Perubahan Domain Aplikasi SPSE – LPSE Provinsi DKI Jakarta',
+    time: '18:07 wib',
+    link: '#', // Ganti dengan link aktual
+  },
+  {
+    date: '20',
+    monthYear: 'Jun 25',
+    title: 'Pemberitahuan Awal Perubahan Domain Aplikasi SPSE – LPSE Provinsi DKI Jakarta',
+    time: '18:07 wib',
+    link: '#', // Ganti dengan link aktual
+  },
+  {
+    date: '20',
+    monthYear: 'Jun 25',
+    title: 'Pemberitahuan Awal Perubahan Domain Aplikasi SPSE – LPSE Provinsi DKI Jakarta',
+    time: '18:07 wib',
+    link: '#', // Ganti dengan link aktual
+  },
+  {
+    date: '20',
+    monthYear: 'Jun 25',
+    title: 'Pemberitahuan Awal Perubahan Domain Aplikasi SPSE – LPSE Provinsi DKI Jakarta',
+    time: '18:07 wib',
+    link: '#', // Ganti dengan link aktual
+  },
+  {
+    date: '20',
+    monthYear: 'Jun 25',
+    title: 'Pemberitahuan Awal Perubahan Domain Aplikasi SPSE – LPSE Provinsi DKI Jakarta',
+    time: '18:07 wib',
+    link: '#', // Ganti dengan link aktual
+  },
+];
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+
+  return (
+    <div>
+      <Navbar />
+
+      <div>
+        <Carousel />
+      </div>
+
+
+      <div className="info-grid">
+      {infoItems.map((item, index) => (
+        <div key={index} className="info-card">
+          <div className="icon-placeholder" />
+          <div className="title-placeholder">
+          <p className="info-title">{item.title}</p>
+          </div>
+          {item.href ? (
+            <Link href={item.href}>
+              <button className="info-button">{item.buttonLabel}</button>
+            </Link>
+          ) : (
+            <button className="info-button">{item.buttonLabel}</button>
+          )}
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      ))}
     </div>
+
+
+      <div className="announcement-section">
+      <div className="announcement-header">
+        <h2>Pengumuman Dan Berita</h2>
+        <a href="#" className="see-all-link">Lihat Semua</a>
+      </div>
+
+      <div className="announcement-grid">
+        {announcements.map((item, index) => (
+          <div key={index} className="announcement-card">
+            <div className="announcement-date">
+              <div className="date-number">{item.date}</div>
+              <div className="date-month">{item.monthYear}</div>
+            </div>
+            <div className="announcement-content">
+              <a href={item.link} className="announcement-title">
+                {item.title}
+              </a>
+              <p className="announcement-time">{item.time}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+
+      <Footer />
+      <ScrollToTopButton />
+    </div>
+    
   );
 }

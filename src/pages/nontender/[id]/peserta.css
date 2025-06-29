@@ -1,0 +1,90 @@
+.peserta-table-container {
+    overflow-x: auto;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+  }
+  
+
+  .peserta-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+  }
+  
+  .peserta-table th {
+    padding: 1rem;
+    background-color: #fff;
+    color: #1e293b;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+
+  }
+  .peserta-table td {
+    padding: 1rem;
+    background-color: #fff;
+    color: #1e293b;
+    font-size: 14px !important;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+  }
+  
+  .peserta-table thead {
+    background-color: #f1f5f9;
+    color: #1f2937;
+  }
+
+  .alasan{
+    width: 20rem;
+  }
+
+  .expanded-row {
+  background-color: #f8f9fa;
+  font-size: 0.95rem;
+  padding: 1rem;
+}
+
+.peserta-table-container {
+  overflow-x: auto;
+}
+
+.peserta-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-wrapper .info-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.tooltip-wrapper .tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 10px;
+  position: absolute;
+  z-index: 10;
+  bottom: -140%; /* posisi tooltip di bawah teks */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+

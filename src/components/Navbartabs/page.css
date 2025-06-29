@@ -1,0 +1,62 @@
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-left: 90px;
+  padding: 1rem;
+  padding-top: 1%;
+  background: #FEFEFE;
+  border-bottom: 1px solid #e5e7eb;
+  position: relative;
+}
+
+.tab-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  color: #29166F;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.tab-button:hover {
+  color: #1f2937; /* gray-800 */
+}
+
+.tab-button.active {
+  color: #DA251C;
+  font-weight: 600;
+}
+
+.tab-indicator {
+  position: absolute;
+  bottom: 10;
+  height: 3px;
+  background-color: #DA251C;
+  border-radius: 2px;
+}
+
+.filter-select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb; /* gray-200 */
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #f9fafb; /* gray-50 */
+  color: #111827; /* gray-900 */
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  appearance: none; /* Removes default arrow for better control */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239ca3af'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+}
+
+.filter-select:focus {
+  border-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  background-color: #fff;
+}

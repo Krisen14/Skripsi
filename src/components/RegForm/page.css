@@ -1,0 +1,177 @@
+.registration-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.registration-warning-box {
+  background-color: #dc2626;
+  color: white;
+  padding: 15px;
+  width: 592;
+  margin-left: -90px;
+  border-radius: 6px;
+}
+
+.warning-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-title{
+  font-size: 24px;
+  text-align: center;
+}
+
+.warning-list {
+  padding-left: 20px;
+  font-size: 14px;
+
+}
+
+.registration-input-row {
+  display: flex;
+  margin-left: -90px;
+  gap: 36px;
+  margin-top: 20px;
+}
+
+
+.registration-input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 263px;
+  background-color: transparent;
+  color: #111;
+}
+
+.registration-input-npwp {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 163px;
+  background-color: transparent;
+  color: #111;
+}
+
+.npwp-check-buttons {
+  padding: 10px 15px;
+  background-color: #0093DD;
+  color: white;
+  border: none;
+  width: 113px !important;
+  border-radius: 4px;
+  height: fit-content;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.registration-field {
+  margin-top: 20px;
+  margin-left: -90px;
+}
+
+.registration-field-bentuk-usaha {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: -90px
+}
+
+.field-label-BU {
+  min-width: 120px; /* Sesuaikan agar label tidak mepet */
+  margin-right: 10px;
+}
+
+.field-label {
+  display: block;
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.registration-select {
+  width: 330px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc; /* gray-200 */
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #f9fafb; /* gray-50 */
+  color: #111827; /* gray-900 */
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.status-option {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+}
+
+.submit-button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: #FFF500;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.password-strength-container {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.strength-bar {
+  width: 305px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.strength-bar.weak {
+  background-color: #e74c3c; /* merah */
+}
+
+.strength-bar.medium {
+  background-color: #f39c12; /* oranye */
+}
+
+.strength-bar.strong {
+  background-color: #2ecc71; /* hijau */
+}
+
+.strength-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.strength-text.weak {
+  color: #e74c3c;
+}
+
+.strength-text.medium {
+  color: #f39c12;
+}
+
+.strength-text.strong {
+  color: #2ecc71;
+}
+

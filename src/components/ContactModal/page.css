@@ -1,0 +1,114 @@
+/* General */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  color: #000;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important; 
+  max-height: 90vh;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.75rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s ease-in-out;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Typography */
+.modal-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-schedule {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Grid Layouts */
+.modal-section.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Footer */
+.modal-footer {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.note {
+  margin-top: 0.75rem;
+  background-color: #fff9db;
+  padding: 1rem;
+  border-left: 4px solid #facc15;
+  border-radius: 6px;
+}
+
+/* List style */
+ul {
+  padding-left: 1rem;
+  list-style: disc inside;
+}
+
+::-webkit-scrollbar-track {
+  background: #faedcd;
+  }
+  
+  /*Shrinking the scrollbar*/
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /*Removing the horizontal scrollbar*/
+  ::-webkit-scrollbar:horizontal {
+    display: none;
+  }
+  
+  /*Giving the thumb a gradient*/
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#4158D0, #C850C0, #FFCC70);
+    border-radius: 20px;
+  }

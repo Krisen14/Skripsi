@@ -1,0 +1,96 @@
+.contact-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.contact-card {
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #111;
+}
+
+.jadwal-table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.jadwal-table{
+  border-radius: 10px;
+}
+
+.jadwal-table th,
+.jadwal-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.jadwal-table th {
+  background-color: #eee;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.catatan {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #111;
+}
+
+.deskripsi{
+  color: #111;
+  margin-top: 2rem;
+}
+
+.NoKet{
+  background-color: #29166F !important;
+  color: white;
+}
+
+.maps-container {
+  margin-top: 4rem;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table2container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 30px auto;
+  border: 1px solid;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.label-cell {
+  background-color: #29166F; /* Warna merah tua */
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  white-space: nowrap;
+}
+
+.address-cell {
+  padding: 12px 20px;
+  color: #C12847; /* Warna merah tua */
+  font-weight: 500;
+}
